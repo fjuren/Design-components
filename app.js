@@ -8,7 +8,8 @@ const mbtn = document.getElementById("m-btn");
 const mcontent = document.getElementById("men-content");
 const sbtn = document.getElementById("s-btn");
 const scontent = document.getElementById("sale-content");
-
+const menuButton = document.getElementById("navBurger-item")
+const navMenuContent = document.getElementById("nav-menu");
 
 // 
 // function for button clicks
@@ -31,3 +32,4 @@ const toggleMenus = (content) => {
 btnClicks(wbtn, wcontent); // click button and toggle women submenu
 btnClicks(mbtn, mcontent); // click button and toggle men submenu
 btnClicks(sbtn, scontent); // click button and toggle sale submenu
+btnClicks(menuButton, navMenuContent)
