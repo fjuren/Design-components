@@ -32,13 +32,22 @@ button:active {
 }
 
 #navBurger-item {
+    background-color: inherit;
+    border: none;
+    color: #D8DEE9;
     display: inline-block;
     position: absolute;
+    font-size: inherit;
+    text-align: left;
+    padding: 0;
     left: 6rem;
     top: 0.6rem;
     line-height: 2rem;
     width: 7rem;
     height: 2rem;
+}
+#navBurger-item:hover {
+    cursor: pointer;
 }
 
 .menu-item {
@@ -139,7 +148,7 @@ a {
   }
 
   a:link {
-    color: green;
+    color: #D8DEE9;
     /* background-color: transparent; */
     text-decoration: none;
   }
