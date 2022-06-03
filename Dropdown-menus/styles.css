@@ -21,7 +21,7 @@ button:active {
     display: inline-block;
 }
 
-.nav-menu {
+#nav-menu {
     position: absolute;
     left: 64px;
     top: 49px;
