@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button:active {
+    color: #81A1C1;
+}
+
+.navbar {
+    background-color: #2E3440;
+    padding: 14px 16px;
+}
+
+.nav-logo{
+    display: inline-block;
+}
+
+.nav-menu {
+    position: absolute;
+    left: 64px;
+    top: 49px;
+    background-color: #2E3440;
+    /* padding: 0 50px 0 39px; */
+    width: 183px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+#navBurger-item {
+    display: inline-block;
+    position: absolute;
+    left: 6rem;
+    top: 0.6rem;
+    line-height: 2rem;
+    width: 7rem;
+    height: 2rem;
+}
+
+.menu-item {
+    height: 2rem;
+    line-height: 2rem;
+    padding-left: 2rem;
+}
+.menu-item:hover {
+    background-color: #434C5E;
+}
+
+.submenu-btn {
+    background-color: inherit;
+    border: none;
+    color: #D8DEE9;
+    font-size: inherit;
+    padding: 0;
+}
+.submenu-btn:hover {
+    cursor: pointer;
+}
+
+.subnav-content {
+    width: 183px;
+}
+.subnav-content a {
+    width: 152px;
+    padding-left: 2rem;
+}
+.subnav-content a:hover {
+    background-color: #434C5E;
+}
+
+#women-content {
+    background-color: #2E3440;
+    position: absolute;
+    left: 11.4rem;
+    top: 2rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    display: none;
+}
+
+#women-content a {
+    height:2rem;
+    display: inline-block;
+}
+
+#w-btn {
+   text-align: left;
+   line-height: 2rem;
+   width: 151px;
+}
+
+#men-content {
+    background-color: #2E3440;
+    position: absolute;
+    left: 11.4rem;
+    top: 4rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    /* display: block; */
+}
+
+#men-content a {
+    height:2rem;
+    display: inline-block;
+}
+
+#m-btn {
+   text-align: left;
+   line-height: 2rem;
+   width: 151px;
+}
+
+#sale-content {
+    background-color: #2E3440;
+    position: absolute;
+    left: 11.4rem;
+    top: 6rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    /* display: block; */
+}
+
+#sale-content a {
+    height:2rem;
+    display: inline-block;
+}
+
+#s-btn {
+   text-align: left;
+   line-height: 2rem;
+   width: 151px;
+}
+
+/* nord https://www.nordtheme.com/docs/colors-and-palettes */
+
+a {
+    display: block;
+  }
+
+  a:link {
+    color: green;
+    /* background-color: transparent; */
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #D8DEE9;
+    /* background-color: transparent; */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ECEFF4;
+    /* background-color: transparent; */
+    text-decoration: none;
+  }
+  
+  a:active {
+    color: #81A1C1;
+    /* background-color: transparent; */
+    text-decoration: none;
+  }
+  
