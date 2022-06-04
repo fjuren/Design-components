@@ -1,6 +1,21 @@
+// Hamberger identifiers
+const hamburger = document.querySelector(".burger-menu");
+
+// -> CSS
+// animates hamberger icon
+const animateBurger = () => {
+    hamburger.classList.toggle("active");
+}
+
+// calls animateBurger when Menu button is clicked
+hamburger.addEventListener("click", animateBurger);
+
 // Navbar identifiers
 const menuBtn = document.getElementById("navBurger-item");
 const navMenuContent = document.getElementById("nav-menu");
+
+// calls animateBurger when Menu button is clicked
+menuBtn.addEventListener("click", animateBurger);
 
 // menu subcontent IDs
 const wBtn = document.getElementById("w-btn");
@@ -14,7 +29,7 @@ const scontent = document.getElementById("sale-content");
 const subDropdown = document.getElementsByClassName("subnav-content");
 
 // ID ID -> Style Style
-// applies onclick to any btn with dropdown content
+// applies onclick to any element associated with dropdown content
 const btnClicks = (anyButton, anyContent) => {
   anyButton.onclick = () => {
     btnToggleCheck(anyContent);
@@ -36,7 +51,6 @@ const btnToggleCheck = (anyContent) => {
 // toggles display of specific menu on/off. Extends functionality from btnClicks
 const toggleMenus = (content) => {
   if (content.style.display !== "none") {
-      console.log('none');
     content.style.display = "none";
   } else {
     content.style.display = "block";
@@ -52,6 +66,7 @@ const closeDropdowns = (dropDowns) => {
 };
 
 btnClicks(menuBtn, navMenuContent); // click button and toggle nav menu
+btnClicks(hamburger, navMenuContent); // click hamberger to toggle nav menu
 btnClicks(wBtn, wcontent); // click button and toggle women submenu
 btnClicks(mBtn, mcontent); // click button and toggle men submenu
 btnClicks(sBtn, scontent); // click button and toggle sale submenu
