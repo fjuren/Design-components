@@ -39,6 +39,34 @@ button:active {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
 }
 
+.burger-menu {
+    position: absolute;
+    left: 4.4rem;
+    top: 1.1rem;
+    /* display: none; */
+}
+.burger-menu:hover {
+    cursor: pointer;
+}
+.burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.burger-menu.active .bar:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+}
+.burger-menu.active .bar:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+}
+.bar {
+    display: block;
+    width: 17px;
+    height: 1.5px;
+    margin: 3px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #d8dee972
+}
+
 #navBurger-item {
     background-color: inherit;
     border: none;

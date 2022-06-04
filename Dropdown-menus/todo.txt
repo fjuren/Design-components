@@ -1,0 +1,10 @@
+[ ] Add hamburger to menu
+[ ] Animate hambergur
+[ ] Animate chevrons on click
+[ ] FIx onhover colors for buttons
+
+
+nice to haves:
+[ ] Add icons to each dropdown item
+[ ] Animate dropdowns for smoothness
+[ ] Round edgest of dropdowns very slightly?
