@@ -2,7 +2,7 @@
 const menuBtn = document.getElementById("navBurger-item");
 const navMenuContent = document.getElementById("nav-menu");
 
-// menu subcontent identifiers
+// menu subcontent IDs
 const wBtn = document.getElementById("w-btn");
 const wcontent = document.getElementById("women-content");
 const mBtn = document.getElementById("m-btn");
@@ -14,13 +14,23 @@ const scontent = document.getElementById("sale-content");
 const subDropdown = document.getElementsByClassName("subnav-content");
 
 // ID ID -> Style Style
-// applies onclick to any btn
+// applies onclick to any btn with dropdown content
 const btnClicks = (anyButton, anyContent) => {
   anyButton.onclick = () => {
-    closeDropdowns(subDropdown);
-    toggleMenus(anyContent);
+    btnToggleCheck(anyContent);
   };
 };
+
+// ID -> Style Style
+// Checks whether button content was displaying prior to button click before running toggleMenus and closeDropDowns. Extens functionality from btnClicks
+const btnToggleCheck = (anyContent) => {
+    if(anyContent.style.display == "none") {
+        closeDropdowns(subDropdown);
+        toggleMenus(anyContent);
+    } else {
+        toggleMenus(anyContent);
+    }
+}
 
 // ID -> Style
 // toggles display of specific menu on/off. Extends functionality from btnClicks
