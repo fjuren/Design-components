@@ -16,6 +16,10 @@ button:active {
     color: #81A1C1;
 }
 
+.fa {
+    font-size: small;
+}
+
 .navbar {
     background-color: #2E3440;
     padding: 14px 16px;
@@ -104,6 +108,9 @@ button:active {
    line-height: 2rem;
    width: 151px;
 }
+#w-btn .fa {
+    padding-left: 64px;
+}
 
 #men-content {
     background-color: #2E3440;
@@ -124,6 +131,9 @@ button:active {
    line-height: 2rem;
    width: 151px;
 }
+#m-btn .fa {
+    padding-left: 89px;
+}
 
 #sale-content {
     background-color: #2E3440;
@@ -143,6 +153,9 @@ button:active {
    text-align: left;
    line-height: 2rem;
    width: 151px;
+}
+#s-btn .fa {
+    padding-left: 91px;
 }
 
 /* nord https://www.nordtheme.com/docs/colors-and-palettes */

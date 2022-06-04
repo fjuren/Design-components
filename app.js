@@ -26,6 +26,7 @@ const btnClicks = (anyButton, anyContent) => {
 // toggles display of specific menu on/off. Extends functionality from btnClicks
 const toggleMenus = (content) => {
   if (content.style.display !== "none") {
+      console.log('none');
     content.style.display = "none";
   } else {
     content.style.display = "block";
