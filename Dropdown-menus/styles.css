@@ -136,8 +136,17 @@ button:active {
    line-height: 2rem;
    width: 151px;
 }
-#w-btn .fa {
-    padding-left: 64px;
+#w-btn .fa-w {
+    position: absolute;
+    left: 10rem;
+    top: 2.7rem;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    /* padding-left: 64px; */
+
+}
+#w-btn .fa-w.active {
+    transform: rotate(90deg)
 }
 
 #men-content {
@@ -159,8 +168,17 @@ button:active {
    line-height: 2rem;
    width: 151px;
 }
-#m-btn .fa {
-    padding-left: 89px;
+#m-btn .fa-m {
+    position: absolute;
+    left: 10rem;
+    top: 4.75rem;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    /* padding-left: 64px; */
+
+}
+#m-btn .fa-m.active {
+    transform: rotate(90deg)
 }
 
 #sale-content {
@@ -182,8 +200,17 @@ button:active {
    line-height: 2rem;
    width: 151px;
 }
-#s-btn .fa {
-    padding-left: 91px;
+#s-btn .fa-s {
+    position: absolute;
+    left: 10rem;
+    top: 6.73rem;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    /* padding-left: 64px; */
+
+}
+#s-btn .fa-s.active {
+    transform: rotate(90deg)
 }
 
 /* nord https://www.nordtheme.com/docs/colors-and-palettes */

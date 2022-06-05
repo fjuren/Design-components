@@ -1,10 +1,57 @@
-// Hamberger identifiers
+// icon identifiers
 const hamburger = document.querySelector(".burger-menu");
+const chevronWomen = document.querySelector(".fa-w");
+const chevronMen = document.querySelector(".fa-m");
+const chevronSale = document.querySelector(".fa-s");
 
 // -> CSS
 // animates hamberger icon
 const animateBurger = () => {
     hamburger.classList.toggle("active");
+    resetAllChevrons();
+}
+
+// -> CSS
+// animates chevron icons
+const animateWChevron = () => {
+    if(chevronWomen.classList.contains("active")) {
+        chevronWomen.classList.remove("active")
+    } else {
+        chevronWomen.classList.toggle("active");
+        chevronMen.classList.remove("active");
+        chevronSale.classList.remove("active");
+    }
+
+}
+// -> CSS
+// animates chevron icons
+const animateMChevron = () => {
+    if(chevronMen.classList.contains("active")) {
+        chevronMen.classList.remove("active");
+    } else {
+        chevronMen.classList.toggle("active");
+        chevronWomen.classList.remove("active");
+        chevronSale.classList.remove("active");
+    }
+}
+// -> CSS
+// animates chevron icons
+const animateSChevron = () => {
+    if(chevronSale.classList.contains("active")) {
+        chevronSale.classList.remove("active");
+    } else {
+        chevronSale.classList.toggle("active");
+        chevronWomen.classList.remove("active");
+        chevronMen.classList.remove("active");
+    }
+}
+
+// -> Style
+// Resets all chevron animations to initial state
+const resetAllChevrons = () => {
+    chevronWomen.classList.remove("active");
+    chevronMen.classList.remove("active");
+    chevronSale.classList.remove("active");
 }
 
 // calls animateBurger when Menu button is clicked
@@ -24,6 +71,10 @@ const mBtn = document.getElementById("m-btn");
 const mcontent = document.getElementById("men-content");
 const sBtn = document.getElementById("s-btn");
 const scontent = document.getElementById("sale-content");
+
+wBtn.addEventListener("click", animateWChevron);
+mBtn.addEventListener("click", animateMChevron);
+sBtn.addEventListener("click", animateSChevron);
 
 // all submenu content
 const subDropdown = document.getElementsByClassName("subnav-content");
