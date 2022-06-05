@@ -7,52 +7,51 @@ const chevronSale = document.querySelector(".fa-s");
 // -> CSS
 // animates hamberger icon
 const animateBurger = () => {
-    hamburger.classList.toggle("active");
-    resetAllChevrons();
-}
+  hamburger.classList.toggle("active");
+  resetAllChevrons();
+};
 
 // -> CSS
 // animates chevron icons
 const animateWChevron = () => {
-    if(chevronWomen.classList.contains("active")) {
-        chevronWomen.classList.remove("active")
-    } else {
-        chevronWomen.classList.toggle("active");
-        chevronMen.classList.remove("active");
-        chevronSale.classList.remove("active");
-    }
-
-}
+  if (chevronWomen.classList.contains("active")) {
+    chevronWomen.classList.remove("active");
+  } else {
+    chevronWomen.classList.toggle("active");
+    chevronMen.classList.remove("active");
+    chevronSale.classList.remove("active");
+  }
+};
 // -> CSS
 // animates chevron icons
 const animateMChevron = () => {
-    if(chevronMen.classList.contains("active")) {
-        chevronMen.classList.remove("active");
-    } else {
-        chevronMen.classList.toggle("active");
-        chevronWomen.classList.remove("active");
-        chevronSale.classList.remove("active");
-    }
-}
+  if (chevronMen.classList.contains("active")) {
+    chevronMen.classList.remove("active");
+  } else {
+    chevronMen.classList.toggle("active");
+    chevronWomen.classList.remove("active");
+    chevronSale.classList.remove("active");
+  }
+};
 // -> CSS
 // animates chevron icons
 const animateSChevron = () => {
-    if(chevronSale.classList.contains("active")) {
-        chevronSale.classList.remove("active");
-    } else {
-        chevronSale.classList.toggle("active");
-        chevronWomen.classList.remove("active");
-        chevronMen.classList.remove("active");
-    }
-}
+  if (chevronSale.classList.contains("active")) {
+    chevronSale.classList.remove("active");
+  } else {
+    chevronSale.classList.toggle("active");
+    chevronWomen.classList.remove("active");
+    chevronMen.classList.remove("active");
+  }
+};
 
 // -> Style
 // Resets all chevron animations to initial state
 const resetAllChevrons = () => {
-    chevronWomen.classList.remove("active");
-    chevronMen.classList.remove("active");
-    chevronSale.classList.remove("active");
-}
+  chevronWomen.classList.remove("active");
+  chevronMen.classList.remove("active");
+  chevronSale.classList.remove("active");
+};
 
 // calls animateBurger when Menu button is clicked
 hamburger.addEventListener("click", animateBurger);
@@ -90,13 +89,13 @@ const btnClicks = (anyButton, anyContent) => {
 // ID -> Style Style
 // Checks whether button content was displaying prior to button click before running toggleMenus and closeDropDowns. Extens functionality from btnClicks
 const btnToggleCheck = (anyContent) => {
-    if(anyContent.style.display == "none") {
-        closeDropdowns(subDropdown);
-        toggleMenus(anyContent);
-    } else {
-        toggleMenus(anyContent);
-    }
-}
+  if (anyContent.style.display == "none") {
+    closeDropdowns(subDropdown);
+    toggleMenus(anyContent);
+  } else {
+    toggleMenus(anyContent);
+  }
+};
 
 // ID -> Style
 // toggles display of specific menu on/off. Extends functionality from btnClicks
